@@ -4,18 +4,6 @@ $(document).ready(function() {
 //store all the logic in a object 
 const ticTacToe = {
 
-  //turnPlayers is a object that will turn the time of the players 
-  //with two functions getter and setter the time for the turn 0 for player x and turn 1 for player o
-  turnPlayers: {
-    actual: 0,
-    get: function() {
-      return this.actual;
-    },
-    set: function(val) {
-      this.actual = val;
-    }
-  },
-
   //actualMove will store all the movies for player x and o
   //After I will compare these arrays with the winning combinations
   actualMove: {
@@ -32,6 +20,25 @@ const ticTacToe = {
 
   //check if the player is winner or if hapen a draw
   // function will receive a player
+  
+
+}
+});
+
+
+
+turnPlayers: {
+  actual: 0,
+  get: function() {
+    return this.actual;
+  },
+  set: function(val) {
+    this.actual = val;
+  }
+},
+
+//check if the player is winner or if hapen a draw
+  // function will receive a player
   checkForWin: function(player) {
     //variable with a counter to be compared if the player is a winner
     let counter = 0;
@@ -41,9 +48,13 @@ const ticTacToe = {
       for (let j = 0; j < winningCombos[i].length; j += 1) {
 
         for (let w = 0; w < player.length; w += 1 ) {
+
+          if (winningCombos)
           //if the counter of the player have 3 matches he is a winner
           // if turnPlayers.get is 0 the winner is x other wise (else if) o is winner
-          if (counter === 3 && this.turnPlayers.get())
+          if (counter === 3 && this.turnPlayers.get() === 0) {
+
+          }
         }
 
       }
@@ -51,5 +62,3 @@ const ticTacToe = {
   },
 
 }
-});
-
