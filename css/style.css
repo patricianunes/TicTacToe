@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+}
+
+.board {
+  padding-top: 100px;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.position {
+  height: 200px;
+  width: 200px;
+  border: 1px solid pink;
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+}
+
+p{
+  display: inline-block;
+  padding: 30%;
+  margin: 0px;
+}
+
+/* img{
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+
+  float:right;
+}
+
+.right{
+  float: right;
+} */
+
