@@ -1,10 +1,10 @@
 # Tic Tac Toe - Game
 
 Project #0: The Game
-=============
+---
 
 Overview
-------------
+---
 
 
 A game that takes seconds to learn but minutes to master! 
@@ -23,8 +23,8 @@ I really wanted to make my project the most simply possible, easy to read and un
 
 Still need some good thinks like restart in the game over situation, show who are playing, but everything could be better and better.
 
-Do you want to play? 
-[Tic Tac Toe - by Pat] (https://patricianunes.github.io/project0/)
+Do you want to play? [Tic Tac Toe by Pat] (https://patricianunes.github.io/project0/)
+
 ---
 
 ## What I have Learned
@@ -44,6 +44,7 @@ By the time I submit this project, I covered new ground in many of the big theme
 **Deployment**: Host a static web site in a managed hosting environment.
 
 **Products and Teams**: Document your code and your code repository so others understand what you've built.
+
 ---
 
 ### My big Goals
