@@ -1,27 +1,19 @@
 .container {
-  width: 100%;
 }
 
 .board {
-  padding-top: 100px;
-  margin: auto;
-  width: 50%;
-  text-align: center;
+  width: 156px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .position {
-  height: 200px;
-  width: 200px;
+  height: 50px;
+  width: 50px;
   border: 1px solid pink;
-  display: inline-block;
-  margin: 0;
-  text-align: center;
-}
-
-p{
-  display: inline-block;
-  padding: 30%;
-  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* img{

@@ -1,64 +1,41 @@
-//read the JS just when the document is ready
-$(document).ready(function() {
 
-//store all the logic in a object 
-const ticTacToe = {
+// My board will be a matriz with start positions zero
+let board = [
+  [0,0,0],
+  [0,0,0],
+  [0,0,0]
+]
 
-  //actualMove will store all the movies for player x and o
-  //After I will compare these arrays with the winning combinations
-  actualMove: {
-    x: [],
-    o:[]
-  },
+//the game have two players, X and O, they have a value 1 and -1 after the moves I need to sum the position and see if one of them is a winner
+const playerX = 1;
+const playerO = -1;
+let start = 1;
 
-  //winningCombos is an array of arrays that store all winning combinations
-  //I need a function that will compare the actualMove.x array with winningCombos and find a match
-  // or actualMove.o array with winningCombos and find a match
-  winningCombos: [
-    [1,2,3], [4,5,6], [7,8,9], [1,4,7], [2,5,8], [3,6,9], [1,5,9], [3,5,7]
-  ],  
+//start game with one of the players and them switch for the next move with other player. 
+let startPlayer = function(start) {
+//if turnPlayer is playerX, change for player O, if not be player x.
+if (start === playerX) {
+  start = playerO
+} else {
+  start = playerX
+}
+return start;
+};
+console.log(start);
 
-  //check if the player is winner or if hapen a draw
-  // function will receive a player
+//moves are all positions in the board, but if position is 0 we can move a player, if not they are already with some value and can't have other value.
+const moves = function(board){
   
-
 }
-});
 
+//if the sum of the 3 elements in the line or in the column or in the diagonal is 3, playerX win.
+//if the sum of the 3 elements in the line or in the column or in the diagonal is -3, playerO win.
+//const winner;
+// first need to see each element and sum with the next element
+// loop i for lines, loop j for colunms
+// create a variable sum them compare the result
+//for diagonal sum the positions [0][0]+[1][1]+[2][2] and [0][2]+[1][1]+[2][0]
+// compare the result 
+// draw - if all the positions are not 0 and any sum is 3 or -3 
 
-
-turnPlayers: {
-  actual: 0,
-  get: function() {
-    return this.actual;
-  },
-  set: function(val) {
-    this.actual = val;
-  }
-},
-
-//check if the player is winner or if hapen a draw
-  // function will receive a player
-  checkForWin: function(player) {
-    //variable with a counter to be compared if the player is a winner
-    let counter = 0;
-    //look all possibles winning combos
-    for (let i = 0; i < winningCombos.length; i += 1) {
-
-      for (let j = 0; j < winningCombos[i].length; j += 1) {
-
-        for (let w = 0; w < player.length; w += 1 ) {
-
-          if (winningCombos)
-          //if the counter of the player have 3 matches he is a winner
-          // if turnPlayers.get is 0 the winner is x other wise (else if) o is winner
-          if (counter === 3 && this.turnPlayers.get() === 0) {
-
-          }
-        }
-
-      }
-    }
-  },
-
-}
+//Game Over and restart
