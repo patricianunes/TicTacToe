@@ -25,9 +25,9 @@ Still need some good thinks like restart in the game over situation, show who ar
 
 Do you want to play? 
 [Tic Tac Toe - by Pat] (https://patricianunes.github.io/project0/)
+---
 
-
-##What I have Learned
+## What I have Learned
 
 By the time I submit this project, I covered new ground in many of the big themes of the course:
 
@@ -44,9 +44,9 @@ By the time I submit this project, I covered new ground in many of the big theme
 **Deployment**: Host a static web site in a managed hosting environment.
 
 **Products and Teams**: Document your code and your code repository so others understand what you've built.
+---
 
-
-###My big Goals
+### My big Goals
 
 - Build a web application from scratch, without a starter codebase
 - Use my programming skills to map out the game logic for a simple game like Tic Tac Toe
@@ -54,9 +54,11 @@ By the time I submit this project, I covered new ground in many of the big theme
 - Build an application to a spec that someone else gives you
 - Build a dynamic game that allows two players to compete
 
-###Technical Requirements
+---
 
-####My app must to have:
+### Technical Requirements
+
+#### My app must to have:
 
 1. Render a game board in the browser
 2. Switch turns between X and O (or whichever markers you select)
@@ -66,13 +68,15 @@ By the time I submit this project, I covered new ground in many of the big theme
 6. Use Javascript for DOM manipulation
 7. Deploy your game online, where the rest of the world can access it
 8. Use semantic markup for HTML and CSS (adhere to best practices)
-_________________________________________________________________________________________________
+
+---
 
 _Special Thanks_
 
 I really apreciated the help give me for:
-🤓 My beloved husband Ciro Nunes  
-👩🏾‍🏫 My new friend Ritika
+
+- 🤓 My beloved husband Ciro Nunes  
+- 👩🏾‍🏫 My new friend Ritika
 
 <!-- ###Necessary Deliverables
 
