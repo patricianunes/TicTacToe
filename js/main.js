@@ -19,8 +19,14 @@ $(document).ready(function() {
       //call the first function in the logic after make the first click
       //Give the element ID for the argument in the moves function
       moves( elementID );
+
       //display the result on the page
       $('.result').text(`${winPlayer} ${gameStatus}`);
+
+      //releod bottom to play again
+      $('button').on('click', function() {
+        location.reload();
+      })
     }
   });
 });

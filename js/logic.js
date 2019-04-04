@@ -96,5 +96,8 @@ const winner = function() {
   if (counter === 9 && winPlayer === '') {
     gameStatus = 'Draw 🐶 = 😼 Restart the game!';
   }
-
+  //stop click when someone win or draw
+  if (gameStatus !== '') {
+    $('.position').off('click');
+  }
 };
