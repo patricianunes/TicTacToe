@@ -1,7 +1,7 @@
 //ready the JS just when the document is ready
 $(document).ready(function() {
-  //is the start player 
-  let turn = 'X';
+  //turn is the start player
+  let turn = '🐶';
   //we get the elements of the all box in the document
   //we put an event click
   $('.position').on('click', function() {
@@ -9,10 +9,10 @@ $(document).ready(function() {
       //when the box is clicked we put the X and O
       $(this).text(turn);
       //if the player is X the next will be O
-      if (turn === 'X') {
-        turn = 'O';
+      if (turn === '🐶') {
+        turn = '😼';
       } else {
-        turn = 'X';
+        turn = '🐶';
       }
       //store the element id after been clicked
       const elementID = $(this).attr('id');
@@ -20,7 +20,7 @@ $(document).ready(function() {
       //Give the element ID for the argument in the moves function
       moves( elementID );
       //display the result on the page
-      $('.result').text(`${winPlayer}  -  ${gameStatus}`);
+      $('.result').text(`${winPlayer} ${gameStatus}`);
     }
   });
 });

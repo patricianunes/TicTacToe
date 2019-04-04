@@ -1,4 +1,7 @@
 .container {
+  width: fit-content;
+  margin: 0 auto;
+  text-align: -webkit-center;
 }
 
 .board {
@@ -14,4 +17,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.position:hover{
+  box-shadow: 0 0 11px rgba(33,33,33,.2)
+}
+
+.result {
+  text-align: -webkit-center;
+  margin-top: 40px;
 }

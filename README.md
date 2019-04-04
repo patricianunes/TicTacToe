@@ -1,7 +1,5 @@
 # Tic Tac Toe - Game
 
-Project #0: The Game
----
 
 Overview
 ---
@@ -23,7 +21,7 @@ I really wanted to make my project the most simply possible, easy to read and un
 
 Still need some good thinks like restart in the game over situation, show who are playing, but everything could be better and better.
 
-Do you want to play? [Tic Tac Toe by Pat] (https://patricianunes.github.io/project0/)
+Do you want to play? [Tic Tac Toe by Pat](https://patricianunes.github.io/project0/)
 
 ---
 

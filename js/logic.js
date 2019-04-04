@@ -24,13 +24,13 @@ let gameStatus = ''
 //elId is an agurment that I give in the main.js
 const moves = function( elId ) {
   //elID is two numbers, I separeted then in two varibles to make the position on the array board 
-  const rowId = elId[0];
-  const colId = elId[1];
+  const rowId = elId[0];//elId[] is the index of the first number at elemente ID (HTML)
+  const colId = elId[1];////elId[] is the index of the second number at elemente ID (HTML)
   //comparation if the first position clicked is 0 we will acess the boar
   if( board[rowId][colId] === 0 ) {
   //acess the board and change the 0 for the value stored in turn that is 1
    board[rowId][colId] = turn;
-   //plus 1 for counter be max 9 and be possible compare in the draw function
+   //plus 1 for counter be max 9 and be possible to compare in the draw function
    counter += 1;
    //call next function and change the player 
    changePlayer();
@@ -55,7 +55,7 @@ const winner = function() {
   //sum each line and column in a loop
   //first loop for lines
   for (let i = 0; i < board.length; i += 1) { 
-    // start variable for store sum of the line and other for column
+    // create a variable sum them compare the result
     let sumLine = 0;
     let sumColumn = 0;
     // second loop for columns
@@ -67,43 +67,34 @@ const winner = function() {
 
     //comparation for winning X in lines and columns
     if (sumColumn === 3 || sumLine === 3) { 
-      gameStatus = 'Win';
-      winPlayer = 'X';
+      gameStatus = 'Win - Restart the game and play again!';
+      winPlayer = '🐶';
     //comparation for winning O
     } else if ( sumColumn === -3 || sumLine === -3) {
-      gameStatus = 'Win';
-      winPlayer = 'O';
+      gameStatus = 'Win - Restart the game and play again!';
+      winPlayer = '😼';
       
     }
   }
 
   //if there is no winning in the lines and columns will check winning in the diagonal
-  //sum for diagonals 
+  //for diagonal sum the positions [0][0]+[1][1]+[2][2] and [0][2]+[1][1]+[2][0]
   let diagonal1 = board[0][0]+board[1][1]+board[2][2];
   let diagonal2 = board[0][2]+board[1][1]+board[2][0];
   
   //comparation for winnings in diagonal
   if (diagonal1 === 3 || diagonal2 === 3) {
-    gameStatus = 'Win';
-    winPlayer = 'X';
+    gameStatus = 'Win - Restart the game and play again!';
+    winPlayer = '🐶';
   } else if (diagonal1 === -3 || diagonal2 === -3) {
-    gameStatus = 'Win';
-    winPlayer = 'O';
+    gameStatus = 'Win - Restart the game and play again!';
+    winPlayer = '😼';
   }
   
   // if there is no sum equal 3 or -3 in the lines, columns and diagonal and all positions have a value diferent to 0, then will be draw
   //anybody win restart the game
-  //first loop for lines 
   if (counter === 9 && winPlayer === '') {
-    gameStatus = 'Draw';
+    gameStatus = 'Draw 🐶 = 😼 Restart the game!';
   }
 
 };
-// first need to see each element and sum with the next element
-// loop i for lines, loop j for colunms
-// create a variable sum them compare the result
-//for diagonal sum the positions [0][0]+[1][1]+[2][2] and [0][2]+[1][1]+[2][0]
-// compare the result 
-// draw - if all the positions are not 0 and any sum is 3 or -3 
-//game over 
-//restart
