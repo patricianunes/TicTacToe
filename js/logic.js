@@ -73,7 +73,6 @@ const winner = function() {
     } else if ( sumColumn === -3 || sumLine === -3) {
       gameStatus = 'Win - Restart the game and play again!';
       winPlayer = '😼';
-      
     }
   }
 
@@ -94,7 +93,7 @@ const winner = function() {
   // if there is no sum equal 3 or -3 in the lines, columns and diagonal and all positions have a value diferent to 0, then will be draw
   //anybody win restart the game
   if (counter === 9 && winPlayer === '') {
-    gameStatus = 'Draw 🐶 = 😼 Restart the game!';
+    gameStatus = '🐶 = 😼 Restart the game!';
   }
   //stop click when someone win or draw
   if (gameStatus !== '') {

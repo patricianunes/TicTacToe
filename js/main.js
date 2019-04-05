@@ -26,6 +26,7 @@ $(document).ready(function() {
       //releod bottom to play again
       $('button').on('click', function() {
         location.reload();
+        //location.reload();
       })
     }
   });

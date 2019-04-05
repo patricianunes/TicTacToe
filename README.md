@@ -9,17 +9,17 @@ A game that takes seconds to learn but minutes to master!
 
 The objective of the project was to use all the technologies and knowledge that I have learned.
 
-I wrote the project with HTML, CSS and Javascript. 
+I wrote the project with **HTML, CSS and Vanilla Javascript and JQuery**. 
 
 The JS logic and Dom manipulation was made in separeted filles.
 
-First I wrote the HTML and then start to make the CSS, when I have the visual my next step was do the logic and finally acess the DOM and make everything works well.
+I wrote the HTML and then start to make the CSS, when I have the visual my next step was to think about the logic and do the logic, finally acess the DOM and make everything works well.
 
 After doing the basics I try to improve my code and make looks better, I focused in the CSS and try to make look pretty!
 
 I really wanted to make my project the most simply possible, easy to read and understandable.
 
-Still need some good thinks like restart in the game over situation, show who are playing, but everything could be better and better.
+Still need some good thinks like, show who are playing, score of the players, but everything could be better and better.
 
 Do you want to play? [Tic Tac Toe by Pat](https://patricianunes.github.io/project0/)
 
