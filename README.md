@@ -21,7 +21,7 @@ I really wanted to make my project the most simply possible, easy to read and un
 
 Still need some good thinks like, show who are playing, score of the players, but everything could be better and better.
 
-Do you want to play? [Tic Tac Toe by Pat](https://patricianunes.github.io/project0/)
+Do you want to play? [Tic Tac Toe by Pat](https://patricianunes.github.io/project0/.)
 
 ---
 
