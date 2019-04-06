@@ -67,11 +67,11 @@ const winner = function() {
 
     //comparation for winning X in lines and columns
     if (sumColumn === 3 || sumLine === 3) { 
-      gameStatus = 'Win - Restart the game and play again!';
+      gameStatus = 'wins!';
       winPlayer = '🐶';
     //comparation for winning O
     } else if ( sumColumn === -3 || sumLine === -3) {
-      gameStatus = 'Win - Restart the game and play again!';
+      gameStatus = 'wins!';
       winPlayer = '😼';
     }
   }
@@ -83,17 +83,17 @@ const winner = function() {
   
   //comparation for winnings in diagonal
   if (diagonal1 === 3 || diagonal2 === 3) {
-    gameStatus = 'Win - Restart the game and play again!';
+    gameStatus = 'wins!';
     winPlayer = '🐶';
   } else if (diagonal1 === -3 || diagonal2 === -3) {
-    gameStatus = 'Win - Restart the game and play again!';
+    gameStatus = 'wins!';
     winPlayer = '😼';
   }
   
   // if there is no sum equal 3 or -3 in the lines, columns and diagonal and all positions have a value diferent to 0, then will be draw
   //anybody win restart the game
   if (counter === 9 && winPlayer === '') {
-    gameStatus = '🐶 = 😼 Restart the game!';
+    gameStatus = `🐶😼 it's a draw!`;
   }
   //stop click when someone win or draw
   if (gameStatus !== '') {

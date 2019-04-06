@@ -1,7 +1,14 @@
-//ready the JS just when the document is ready
+const cat = '😼';
+const dog = '🐶';
+
+const setCurrentPlayer = player =>
+  $('#current-player').text(player === cat ? cat : dog);
+
+
 $(document).ready(function() {
   //turn is the start player
-  let turn = '🐶';
+  let turn = dog;
+  setCurrentPlayer(turn);
   //we get the elements of the all box in the document
   //we put an event click
   $('.position').on('click', function() {
@@ -9,10 +16,10 @@ $(document).ready(function() {
       //when the box is clicked we put the X and O
       $(this).text(turn);
       //if the player is X the next will be O
-      if (turn === '🐶') {
-        turn = '😼';
+      if (turn === dog) {
+        turn = cat;
       } else {
-        turn = '🐶';
+        turn = dog;
       }
       //store the element id after been clicked
       const elementID = $(this).attr('id');
@@ -20,14 +27,16 @@ $(document).ready(function() {
       //Give the element ID for the argument in the moves function
       moves( elementID );
 
-      //display the result on the page
-      $('.result').text(`${winPlayer} ${gameStatus}`);
-
-      //releod bottom to play again
-      $('button').on('click', function() {
-        location.reload();
-        //location.reload();
-      })
+      if (gameStatus) {
+        $('.result').text(`${winPlayer} ${gameStatus}`);
+        $('.turn').remove();
+        $('.scoreboard').addClass('is-game-over');
+        $('#play-again').on('click', () => {
+          window.location.reload();
+        })
+      } else {
+        setCurrentPlayer(turn);
+      }
     }
   });
 });
