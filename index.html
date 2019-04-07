@@ -22,26 +22,25 @@
 
   <main class="game">
     <div class="board">
-      <div class="position" id="00"></div>
-      <div class="position" id="01"></div>
-      <div class="position" id="02"></div>
+      <div class="position" id="0"></div>
+      <div class="position" id="1"></div>
+      <div class="position" id="2"></div>
 
-      <div class="position" id="10"></div>
-      <div class="position" id="11"></div>
-      <div class="position" id="12"></div>
+      <div class="position" id="3"></div>
+      <div class="position" id="4"></div>
+      <div class="position" id="5"></div>
 
-      <div class="position" id="20"></div>
-      <div class="position" id="21"></div>
-      <div class="position" id="22"></div>
+      <div class="position" id="6"></div>
+      <div class="position" id="7"></div>
+      <div class="position" id="8"></div>
     </div>
 
-    <h3 class="turn">
-      <span class="current-player" id="current-player"></span>'s turn
-    </h3>
-
     <div class="scoreboard">
-      <h3 class="result"></h3>
-      <button id="play-again" class="button" type="reset">play again</button>
+      <h3 class="turn">
+        <span class="current-player" id="current-player"></span>'s turn
+      </h3>
+      <h3 class="result">--result placeholder--</h3>
+      <button class="button play-again" id="play-again" type="reset">play again</button>
     </div>
   </main>
 
@@ -64,6 +63,7 @@
 
   <script src="js/jquery.js"></script>
   <script src="js/logic.js"></script>
+  <script src="js/ui.js"></script>
   <script src="js/main.js"></script>
 </body>
 
